@@ -17,13 +17,13 @@ namespace WinFormsApp1
             double num1, num2;
             if (!double.TryParse(textBox1.Text, out num1) || !double.TryParse(textBox2.Text, out num2))
             {
-                MessageBox.Show("ÇëÊäÈëÓĞĞ§µÄÊı×Ö!");
+                MessageBox.Show("è¯·è¾“å…¥æœ‰æ•ˆçš„æ•°å­—!");
                 return;
             }
 
-            string op = comboBoxOperator.SelectedItem.ToString();
+            string choice = comboBoxOperator.SelectedItem.ToString();
             double result = 0;
-            switch (op)
+            switch (choice)
             {
                 case "+":
                     result = num1 + num2;
@@ -41,16 +41,16 @@ namespace WinFormsApp1
                     }
                     else
                     {
-                        MessageBox.Show("³ıÊı²»ÄÜÎªÁã!");
+                        MessageBox.Show("é™¤æ•°ä¸èƒ½ä¸ºé›¶!");
                         return;
                     }
                     break;
                 default:
-                    MessageBox.Show("ÎŞĞ§µÄÔËËã·û!");
+                    MessageBox.Show("è¿ç®—ç¬¦æ— æ•ˆ!");
                     return;
             }
 
-            labelResult.Text = $"½á¹û: {result}";
+            labelResult.Text = $"ç»“æœ: {result}";
         }
     
     }
