@@ -9,7 +9,7 @@ node_modules/
 # 忽略日志文件
 logs/
 *.log
-assignment1/*.resx
+assignment1/WinFormsApp1/*.resx
 # 忽略构建输出目录
 /dist
 
