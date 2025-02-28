@@ -3,20 +3,11 @@
 #忽略特定扩展名的文件：使用通配符 *，例如 *.log
 #忽略特定前缀的文件或目录：例如 img*
 
-# 忽略 node_modules 目录
-node_modules/
-
-# 忽略日志文件
-logs/
-*.log
-assignment1/WinFormsApp1/*.resx
-# 忽略构建输出目录
-/dist
-
-# 忽略环境变量文件
-env
-
-# 忽略 IDE 配置文件
-idea/
-vscode/
-*.sw*
+**/.vs
+**/bin
+**/obj
+**/properties
+**/*.config
+**/*.resx
+**/*.csproj
+**/*.sln
